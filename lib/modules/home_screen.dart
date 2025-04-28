@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/animated_align_and_position.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/animated_padding.dart';
+import 'implicit_animations/animated_opacity.dart';
 import 'implicit_animations/animated_container.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -34,6 +37,42 @@ class HomeScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const AnimatedContainerExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Opacity',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimatedOpacityExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Padding',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedPaddingExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Align & Position',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedAlignAndPositionExample(),
                   ),
                 );
               },
