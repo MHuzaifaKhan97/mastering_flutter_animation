@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedCrossFadeExample extends StatefulWidget {
   const AnimatedCrossFadeExample({super.key});
@@ -20,8 +21,10 @@ class _AnimatedCrossFadeExampleState extends State<AnimatedCrossFadeExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Animated Cross Fade'),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'Animated Cross Fade',
+        isBack: true,
       ),
       body: Center(
         child: GestureDetector(

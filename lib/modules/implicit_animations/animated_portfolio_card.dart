@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedProfileCard extends StatefulWidget {
   const AnimatedProfileCard({super.key});
@@ -35,11 +36,11 @@ class _AnimatedProfileCardState extends State<AnimatedProfileCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Animated Portfolio Card'),
-        centerTitle: true,
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'Animated Portfolio Card',
+        isBack: true,
       ),
-      backgroundColor: Colors.grey.shade200,
       body: Center(
         child: GestureDetector(
           onTap: _toggleCard,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedAlignAndPositionExample extends StatefulWidget {
   const AnimatedAlignAndPositionExample({super.key});
@@ -22,8 +23,10 @@ class _AnimatedAlignExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('AnimatedAlign & AnimatedPositioned'),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'AnimatedAlign & AnimatedPositioned',
+        isBack: true,
       ),
       body: Column(
         children: [

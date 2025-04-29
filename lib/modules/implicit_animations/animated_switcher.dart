@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedSwitcherExample extends StatefulWidget {
   const AnimatedSwitcherExample({super.key});
@@ -20,8 +21,10 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Animated Switcher'),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'Animated Switcher',
+        isBack: true,
       ),
       body: Center(
         child: Column(

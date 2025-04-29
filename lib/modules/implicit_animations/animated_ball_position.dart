@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedBallPosition extends StatefulWidget {
   const AnimatedBallPosition({super.key});
@@ -29,8 +30,10 @@ class _AnimatedBallPositionState extends State<AnimatedBallPosition> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Animate Position of Ball'),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'Animate Position of Ball',
+        isBack: true,
       ),
       body: Column(
         children: [

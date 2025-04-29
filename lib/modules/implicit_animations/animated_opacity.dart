@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 class AnimatedOpacityExample extends StatefulWidget {
   const AnimatedOpacityExample({super.key});
@@ -19,8 +20,10 @@ class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('AnimatedOpacity'),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      appBar: CustomRoundedAppBar(
+        title: 'Animated Opacity',
+        isBack: true,
       ),
       body: Center(
         child: GestureDetector(

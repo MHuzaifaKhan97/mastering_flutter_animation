@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 
 // class TweenAnimationBuilderExample extends StatefulWidget {
 //   const TweenAnimationBuilderExample({super.key});
@@ -97,8 +98,9 @@ class _TweenAnimationBuilderExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('TweenAnimationBuilder'),
+      appBar: CustomRoundedAppBar(
+        title: 'Tween Animation',
+        isBack: true,
       ),
       body: AnimatedBuilder(
         animation: _controller,
