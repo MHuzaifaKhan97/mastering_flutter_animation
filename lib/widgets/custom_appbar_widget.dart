@@ -76,12 +76,14 @@ class CustomRoundedAppBar extends StatelessWidget
               },
               child: Text(
                 title,
+                textAlign: isBack ? null : TextAlign.center,
                 overflow: TextOverflow.ellipsis,
                 // maxLines: 2,
                 style: titleStyle ??
                     const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
+
                       color: Colors.white,
                       // shadows: [
                       //   Shadow(
