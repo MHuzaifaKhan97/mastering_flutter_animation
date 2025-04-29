@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/animated_align_and_position.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/animated_ball_position.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/animated_padding.dart';
 import 'implicit_animations/animated_opacity.dart';
 import 'implicit_animations/animated_container.dart';
@@ -73,6 +74,18 @@ class HomeScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => AnimatedAlignAndPositionExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Task: Animate Position of Ball',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedBallPosition(),
                   ),
                 );
               },
