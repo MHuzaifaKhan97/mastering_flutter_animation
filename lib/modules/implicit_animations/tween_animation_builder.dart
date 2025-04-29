@@ -97,6 +97,9 @@ class _TweenAnimationBuilderExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('TweenAnimationBuilder'),
+      ),
       body: AnimatedBuilder(
         animation: _controller,
         builder: (context, child) {
