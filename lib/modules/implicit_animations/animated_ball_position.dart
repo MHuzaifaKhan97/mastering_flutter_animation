@@ -30,7 +30,7 @@ class _AnimatedBallPositionState extends State<AnimatedBallPosition> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AnimatedAlign & AnimatedPositioned'),
+        title: Text('Animate Position of Ball'),
       ),
       body: Column(
         children: [

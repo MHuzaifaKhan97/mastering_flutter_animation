@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/animated_align_and_position.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/animated_ball_position.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/animated_cross_fade.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/animated_padding.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/animated_switcher.dart';
+import 'package:mastering_flutter_animation/modules/implicit_animations/tween_animation_builder.dart';
 import 'implicit_animations/animated_opacity.dart';
 import 'implicit_animations/animated_container.dart';
 
@@ -86,6 +89,42 @@ class HomeScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => AnimatedBallPosition(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Cross Fade',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedCrossFadeExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Switcher',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedSwitcherExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Tween Animation',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TweenAnimationBuilderExample(),
                   ),
                 );
               },

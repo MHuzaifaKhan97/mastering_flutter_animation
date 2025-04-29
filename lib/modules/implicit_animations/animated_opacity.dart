@@ -26,7 +26,7 @@ class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample> {
         child: GestureDetector(
           onTap: _animate,
           child: AnimatedOpacity(
-            opacity: _visible ? 1.0 : 0.0,
+            opacity: _visible ? 1.0 : 0.1,
             duration: Duration(seconds: 1),
             curve: Curves.easeInOut,
             child: Container(
