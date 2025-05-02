@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/animated_builder.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/curved_animation.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/interval_plus_staggered_animations.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/reversing_and_looping_animations.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/transition_widgets.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/tween_sequence_chain_animation.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
@@ -68,6 +70,31 @@ class ExplicitAnimations extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const TweenSequenceChainAnimation(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Interval + Staggered Animations',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const IntervalPlusStaggeredAnimations(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Reversing & Looping Animations',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ReversingAndLoopingAnimations(),
                   ),
                 );
               },
