@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/animated_builder.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/curved_animation.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/transition_widgets.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/tween_sequence_chain_animation.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 import 'package:mastering_flutter_animation/widgets/custom_button.dart';
 
@@ -42,6 +44,30 @@ class ExplicitAnimations extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const TransitionWidgetsExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Curved Animation',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CurvedAnimationExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Tween Sequence & Chain Animation',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TweenSequenceChainAnimation(),
                   ),
                 );
               },

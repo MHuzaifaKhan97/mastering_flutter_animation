@@ -45,17 +45,22 @@ class _TransitionWidgetsExampleState extends State<TransitionWidgetsExample>
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 240, 240, 240),
       appBar: CustomRoundedAppBar(
-        title: 'Animated Builder',
+        title: 'Transition Widgets',
         isBack: true,
       ),
       body: Center(
         child: SlideTransition(
-          position: _slide,
-          child: FadeTransition(
-            opacity: _controller,
-            child: FlutterLogo(size: 100),
-          ),
-        ),
+            position: _slide,
+            child: SizeTransition(
+              sizeFactor: _controller,
+              axis: Axis.vertical,
+              child: FlutterLogo(size: 100),
+            )
+            // child: FadeTransition(
+            //   opacity: _controller,
+            //   child: FlutterLogo(size: 100),
+            // ),
+            ),
       ),
     );
   }
