@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/animated_builder.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/curved_animation.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/interval_plus_staggered_animations.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/reversing_and_looping_animations.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/transition_widgets.dart';
-import 'package:mastering_flutter_animation/modules/explicit_animations/tween_sequence_chain_animation.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/animated_builder/animated_builder.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/curved_animation/curved_animation.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/internal_plus_staggered_animations/interval_plus_staggered_animations.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/reversing_and_looping_animation/reversing_and_looping_animations.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/transitions_widgets/transition_widgets.dart';
+import 'package:mastering_flutter_animation/modules/explicit_animations/tween_sequence_chain_animation/tween_sequence_chain_animation.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 import 'package:mastering_flutter_animation/widgets/custom_button.dart';
 
