@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/modules/advanced_animations/animation_using_riverpod/animation_using_riverpod.dart';
 import 'package:mastering_flutter_animation/modules/advanced_animations/custom_painter_plus_animation/custom_painter_plus_animation.dart';
 import 'package:mastering_flutter_animation/modules/advanced_animations/hero_animation/hero_animation.dart';
 import 'package:mastering_flutter_animation/modules/advanced_animations/physics_based_animation/physics_based_animation.dart';
@@ -55,6 +56,18 @@ class AdvancedAnimations extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const PhysicsBasedAnimation(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animtion using Riverpod',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimationUsingRiverpod(),
                   ),
                 );
               },
