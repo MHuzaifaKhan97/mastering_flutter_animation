@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mastering_flutter_animation/modules/implicit_animations/animated_container/animated_container.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_login_screen/animated_login_screen.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 import 'package:mastering_flutter_animation/widgets/custom_button.dart';
 
@@ -23,12 +23,12 @@ class AnimationMiniProjects extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             CustomButton(
-              title: 'Animated Container',
+              title: 'Animated Login Screen',
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const AnimatedContainerExample(),
+                    builder: (context) => const AnimatedLoginScreen(),
                   ),
                 );
               },
