@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => Container()));
                 },
-                title: 'Mini Projects',
+                title: 'Animation Mini Projects',
               ),
             ],
           ),
