@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/advanced_animations/advanced_animations.dart';
+import 'package:mastering_flutter_animation/modules/animation_libraries/animation_libraries.dart';
 import 'package:mastering_flutter_animation/modules/explicit_animations/explicit_animations.dart';
 import 'package:mastering_flutter_animation/modules/implicit_animations/implicit_animations.dart';
 
@@ -44,11 +45,17 @@ class HomeScreen extends StatelessWidget {
                 title: 'Advanced Animations',
               ),
               HomeItemsWidget(
-                onTap: () {},
-                title: 'Animations Packages',
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => AnimationLibraries()));
+                },
+                title: 'Animations Libraries',
               ),
               HomeItemsWidget(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => Container()));
+                },
                 title: 'Mini Projects',
               ),
             ],
