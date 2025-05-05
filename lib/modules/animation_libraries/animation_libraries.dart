@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mastering_flutter_animation/modules/animation_libraries/lottie_animation/lottie_animation.dart';
+import 'package:mastering_flutter_animation/modules/animation_libraries/lottie_animation/lottie_animation_with_controller.dart';
 import 'package:mastering_flutter_animation/modules/animation_libraries/rive_animation/rive_animation.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 import 'package:mastering_flutter_animation/widgets/custom_button.dart';
@@ -29,6 +31,30 @@ class AnimationLibraries extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const RiveAnimationExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Lottie Animation',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LottieAnimationExample(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Lottie Animation - Controller',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LottieAnimationWithController(),
                   ),
                 );
               },
