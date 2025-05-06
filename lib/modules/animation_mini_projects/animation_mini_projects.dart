@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_search_ui/animated_search_ui.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/bouncing_button_animation/bouncing_button_animation.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/shake_effect_on_invalid_input/shake_effect_on_invalid_input.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_login_screen/animated_login_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_progressbar/animated_progressbar.dart';
@@ -187,6 +188,18 @@ class AnimationMiniProjects extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const AnimatedSearchUi(),
+                    ),
+                  );
+                },
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              CustomButton(
+                title: 'Bouncing Button Animation',
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const BouncingButtonAnimation(),
                     ),
                   );
                 },
