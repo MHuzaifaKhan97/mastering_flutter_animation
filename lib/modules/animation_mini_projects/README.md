@@ -1,4 +1,4 @@
-## 20+ Animation Mini Projects
+## 10+ Animation Mini Projects
 
 ### After learning concepts, we will build:
 
@@ -9,8 +9,6 @@
 ### - Swipe Cards (Tinder-style)
 
 ### - Onboarding Screens
-
-### - Progress Bars
 
 ### - Staggered Grid Animation
 
@@ -26,20 +24,10 @@
 
 ### - Lottie Integration
 
-### - Rive Character Animation
-
 ### - Custom Loader with Painter
 
-### - Animated Bottom Sheet
-
 ### - Shake Effect on Invalid Input
-
-### - Reorderable List with Animations
 
 ### - Animated Search UI
 
 ### - Bouncing Button Animation
-
-### - Slide-in/Slide-out Panels
-
-### - ...and more!

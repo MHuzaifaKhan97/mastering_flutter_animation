@@ -63,7 +63,7 @@
 
 ---
 
-# 🛠️ Phase 2: 20+ Animation Mini Projects
+# 🛠️ Phase 2: 10+ Animation Mini Projects
 
 After learning concepts, we will build:
 
@@ -71,7 +71,6 @@ After learning concepts, we will build:
 - Loading Spinners
 - Swipe Cards (Tinder-style)
 - Onboarding Screens
-- Progress Bars
 - Staggered Grid Animation
 - Animated Tab Bar
 - Hero Page Transition
@@ -79,12 +78,6 @@ After learning concepts, we will build:
 - Ripple Effects
 - Scroll-based Animations
 - Lottie Integration
-- Rive Character Animation
-- Custom Loader with Painter
-- Animated Bottom Sheet
 - Shake Effect on Invalid Input
-- Reorderable List with Animations
 - Animated Search UI
 - Bouncing Button Animation
-- Slide-in/Slide-out Panels
-- ...and more!
