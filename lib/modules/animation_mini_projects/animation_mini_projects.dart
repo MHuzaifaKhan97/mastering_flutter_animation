@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_login_screen/animated_login_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_progressbar/animated_progressbar.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_tabbar/animated_tabbar.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/custom_loading_spinner/custom_loading_spinner.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/expanding_cards/expanding_cards.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/hero_page_transition/hero_page_transition.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/onboarding_screen/onboarding_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/staggered_grid_animation/staggered_grid_animation.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/tinder_like_swipe_card/tinder_like_swipe_card.dart';
@@ -94,6 +97,42 @@ class AnimationMiniProjects extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const StaggeredGridAnimation(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Animated Tab Bar',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimatedTabbar(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Hero Page Transition',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HeroPageTransition(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Expanding Cards',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ExpandingCards(),
                   ),
                 );
               },

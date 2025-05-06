@@ -10,7 +10,7 @@ class StaggeredGridAnimation extends StatefulWidget {
 }
 
 class _StaggeredGridAnimationState extends State<StaggeredGridAnimation> {
-  List<bool> _visibleList = List.generate(12, (_) => false);
+  final List<bool> _visibleList = List.generate(12, (_) => false);
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _StaggeredGridAnimationState extends State<StaggeredGridAnimation> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 240, 240, 240),
       appBar: CustomRoundedAppBar(
-        title: 'Custom Loading Spinner',
+        title: 'Staggered Grid Animation',
         isBack: true,
       ),
       body: GridView.builder(
