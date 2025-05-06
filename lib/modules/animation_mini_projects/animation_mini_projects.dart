@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_login_screen/animated_login_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/custom_loading_spinner/custom_loading_spinner.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/onboarding_screen/onboarding_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/tinder_like_swipe_card/tinder_like_swipe_card.dart';
 import 'package:mastering_flutter_animation/widgets/custom_appbar_widget.dart';
 import 'package:mastering_flutter_animation/widgets/custom_button.dart';
@@ -55,6 +56,18 @@ class AnimationMiniProjects extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const TinderLikeSwipeCard(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            CustomButton(
+              title: 'Onboarding Screen',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const OnboardingScreen(),
                   ),
                 );
               },
