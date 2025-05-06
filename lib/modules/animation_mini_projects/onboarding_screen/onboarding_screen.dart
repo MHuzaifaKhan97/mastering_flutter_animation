@@ -31,7 +31,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 240, 240, 240),
       appBar: CustomRoundedAppBar(
-        title: 'Custom Loading Spinner',
+        title: 'Animated Onboarding',
         isBack: true,
       ),
       body: Stack(
