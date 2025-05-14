@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_search_ui/animated_search_ui.dart';
+import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_splash_screen/animated_splash_screen.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/bouncing_button_animation/bouncing_button_animation.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/shake_effect_on_invalid_input/shake_effect_on_invalid_input.dart';
 import 'package:mastering_flutter_animation/modules/animation_mini_projects/animated_login_screen/animated_login_screen.dart';
@@ -204,6 +205,19 @@ class AnimationMiniProjects extends StatelessWidget {
                   );
                 },
               ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              CustomButton(
+                title: 'Animated Splash Screen',
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const AnimatedSplashScreen(),
+                    ),
+                  );
+                },
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             ],
           ),
         ),
